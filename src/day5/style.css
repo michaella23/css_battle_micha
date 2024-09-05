@@ -1,6 +1,7 @@
 body,
 main {
     display: grid;
+    place-items: center;
 }
 
 body {
@@ -8,14 +9,68 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #232323;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body,
-main {
-    place-items: center;
+.link-back {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background-color: #dedede;
+    color: #232323;
+    padding: 0.5em 1.5em;
+    border-radius: 4px;
 }
 
 main {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
+    background: #9076D8;
 }
+
+#grid {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    width: 250px;
+    height: 200px;
+    gap: 16px;
+    margin-left: 28px;
+  }
+
+  .flex {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    gap: 14px;
+  }
+  
+  div {
+    width: 45px;
+    background: #F3EAD2;
+  }
+
+  .one {
+    align-items: end;
+  }
+
+  #one {
+    height: 100%;
+  }
+  
+  #two,
+  #six {
+    height: 63px;
+  }
+  
+  #thr,
+  #sev {
+    height: 42px;
+  }
+  
+  #fou, 
+  #eit {
+    height: 27px;
+  }
