@@ -1,0 +1,34 @@
+body,
+main,
+#grid {
+    display: grid;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+body,
+main {
+    place-items: center;
+}
+
+main {
+    width: 400px;
+    height: 300px;
+    background: #4A9A86;
+}
+
+
+#grid {
+    /* margin: 0 auto; */
+    width: 250px;
+    height: 150px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+div:nth-child(even) {
+    background-color: #FAE29E;
+}
