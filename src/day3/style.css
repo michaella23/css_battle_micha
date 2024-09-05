@@ -1,6 +1,6 @@
-body,
-main {
+body {
     display: grid;
+    place-items: center;
 }
 
 body {
@@ -10,12 +10,38 @@ body {
     background-color: #232323;
 }
 
-body,
-main {
-    place-items: center;
-}
-
 main {
     width: 400px;
     height: 300px;
+    background:#F3F3F3;
+}
+
+.wrapper {
+    margin: 25px;
+}
+
+#top {
+    display: flex;
+    gap: 50px;
+}
+
+#grid-one,
+#grid-two,
+#grid-thr {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px)
+}
+
+#grid-one div:nth-child(even),
+#grid-two div:nth-child(even),
+#grid-thr div:nth-child(even) {
+    background: #C64F4F;
+}
+
+#grid-thr {
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-top: -50px;
 }
