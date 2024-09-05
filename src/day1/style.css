@@ -4,11 +4,23 @@ main,
     display: grid;
 }
 
+
+.back-link {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background-color: #dedede;
+    color: #232323;
+    padding: 0.5em 1.5em;
+    border-radius: 4px;
+}
+
 body {
     margin: 0;
     height: 100vh;
     width: 100%;
     background-color: #232323;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body,
@@ -17,7 +29,8 @@ main {
 }
 
 main {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     background: #4A9A86;
 }
