@@ -17,6 +17,7 @@ for (let i=1; i<=30; i++) {
         .then(res => {
             if (res.ok) {
                 imageEl.setAttribute("class", "solution-img")
+                imageEl.setAttribute("alt", `preview of day${[i]} solution`)
                 imageEl.src = imgPath
             } else {
                 imageEl.src = ""
