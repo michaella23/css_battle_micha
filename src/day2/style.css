@@ -34,7 +34,8 @@ main {
     position: relative;
 }
 
-div {
+#one,
+#two {
     border: 50px solid #9382E4;
     position: absolute;
 }
@@ -49,4 +50,34 @@ div {
     height: 140px;
     border-width: 30px;
     transform: rotate(45deg);
+}
+
+.wrapper {
+    background-color: #232323 !important;
+    color: #dedede;
+    width: 70vw;
+}
+
+.wrapper section {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.screenshot {
+    width: 450px;
+    height: 300px;
+}
+
+.text {
+    color: #dedede;
+    margin: 2em auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+code {
+    background: #454545;
+    font-size: 1rem;
 }

@@ -1,9 +1,14 @@
+img {
+    max-width: 100%;
+    width: 450px;
+    height: 300px;
+}
+
 body,
 main,
 #grid {
     display: grid;
 }
-
 
 .back-link {
     position: absolute;
@@ -37,7 +42,6 @@ main {
 
 
 #grid {
-    /* margin: 0 auto; */
     width: 250px;
     height: 150px;
     grid-template-columns: repeat(5, 1fr);
@@ -45,4 +49,29 @@ main {
 
 div:nth-child(even) {
     background-color: #FAE29E;
+}
+
+.wrapper {
+    background-color: #232323 !important;
+    color: #dedede;
+    width: 70vw;
+}
+
+.wrapper section {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+
+.text {
+    margin: 2em auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+code {
+    background: #454545;
+    font-size: 1rem;
 }
