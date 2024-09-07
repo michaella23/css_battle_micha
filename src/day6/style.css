@@ -101,11 +101,11 @@ code {
   }
 
   #eye {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 5px solid #222;
-    left: 243px;
+    left: 248px;
     top: 125px
   }
 
@@ -136,6 +136,8 @@ code {
 
 .link {
     color: inherit;
+    display: inline;
+    padding: unset;
 }
 
 code {

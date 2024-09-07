@@ -22,6 +22,7 @@ for (let i=1; i<=30; i++) {
     const placeholderEl = document.createElement("div")
     placeholderEl.setAttribute("class", "placeholder")
     const anchorEl = document.createElement("a")
+    anchorEl.setAttribute("class", "solution-link")
     anchorEl.href = `src/day${[i]}/index.html`
     anchorEl.textContent = `Day ${i}`
     const imageEl = document.createElement("img")

@@ -39,7 +39,7 @@ h1 {
     text-align: center;
 }
 
-a {
+.solution-link {
     display: block;
     width: max-content;
     color: #dedede;
