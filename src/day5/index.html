@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CSS Battle Day 5</title>
 </head>
+
 <body>
-    <a href="../../index.html" class="link-back">Back to home</a>
-    <main>
-        <div id="grid">
-            <div class="flex one">
-              <div id="one"></div>
-              <div id="two"></div>
-              <div id="thr"></div>
-              <div id="fou"></div>
+    <a href="../../index.html" class="back-link">Back to home</a>
+    <div class="wrapper">
+        <section class="main">
+            <div class="bars">
+                <div id="grid">
+                    <div class="flex one">
+                        <div id="one"></div>
+                        <div id="two"></div>
+                        <div id="thr"></div>
+                        <div id="fou"></div>
+                    </div>
+                    <div class="flex">
+                        <div id="fiv"></div>
+                        <div id="six"></div>
+                        <div id="sev"></div>
+                        <div id="eit"></div>
+                    </div>
+                </div>
             </div>
-            <div class="flex">
-              <div id="fiv"></div>
-              <div id="six"></div>
-              <div id="sev"></div>
-              <div id="eit"></div>
-          </div>
-    </main>
-    <section>
-        <!-- <p>This looked deceptively simple. Maybe it was simple, I just struggled. I thought I'd use grid, but it didn't work out like I thought. I probably needed to define columns, rows and grid-template-areas, now that I think about it. I ended up using flex box for a top container and a bottom container. Each column looked to be the same width and with the same gap between each one, but for some reason I would be off a pixel or two on various sides of the column. It was strange. This design also played tricks on my eyes. Was it actually an optical illusion?!</p> -->
-    </section>
+            <img src="code.png" alt="CSS code" class="screenshot">
+        </section>
+        <section class="text">
+            <p>This looked deceptively simple. Maybe it was simple, I just struggled. I thought I'd use grid, but it didn't
+                work out like I thought. I probably needed to define columns, rows and grid-template-areas, now that I think
+                about it. I ended up using flex box for a top container and a bottom container. Each column looked to be the
+                same width and with the same gap between each one, but for some reason I would be off a pixel or two on
+                various sides of the column. It was strange. This design also played tricks on my eyes. Was it actually an
+                optical illusion?!
+            </p>
+            <a href="https://github.com/michaella23/css_battle_micha/tree/main/src/day5" class="repo-link">Check out my code</a>
+        </section>
+    </div>
 </body>
+
 </html>
