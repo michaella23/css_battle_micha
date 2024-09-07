@@ -10,21 +10,34 @@
 
 <body>
     <a href="../../index.html" class="back-link">Back to home</a>
-    <main>
-        <div class="wrapper">
-            <div id="top">
-                <div id="grid-one">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+    <div class="wrapper">
+        <section class="main">
+            <div class="heart">
+                <div id="top">
+                    <div id="grid-one">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="grid-two">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-                <div id="grid-two">
+                <div id="grid-thr">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -36,23 +49,14 @@
                     <div></div>
                 </div>
             </div>
-            <div id="grid-thr">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </main>
-    <img src="screenshot.png" alt="CSS code" class="screenshot">
-    <section>
-        <p>I thought this would be way more straightforward than it was. I looked at this as one large grid (five rows by seven columns). I tried defining <code>grid-template-columns</code>, <code>grid-template-rows</code> and <code>grid-template areas</code>. I gave a class to each <code>div</code> that would be red. If I had alternating red and white, I might define one row as "red . red . red . red". And then I would give the <code>.red</code> class a grid-area of red. I could not get this to work though! My solution is kind of hacky. I have three grids that are 3x3. I used flexbox and margin to position them to match the design.</p>
-    </section>
+            <img src="code.png" alt="CSS code" class="screenshot">
+        </section>
+
+        <section class="text">
+            <p>I thought this would be way more straightforward than it was. I looked at this as one large grid (five rows by seven columns). I tried defining <code>grid-template-columns</code>, <code>grid-template-rows</code> and <code>grid-template areas</code>. I gave a class to each <code>div</code> that would be red. If I had alternating red and white, I might define one row as "red . red . red . red". And then I would give the <code>.red</code> class a grid-area of red. I could not get this to work though! My solution is kind of hacky. I have three grids that are 3x3. I used flexbox and margin to position them to match the design.</p>
+            <a href="https://github.com/michaella23/css_battle_micha/tree/main/src/day3" target="_blank" class="repo-link">Check out my code</a>
+        </section>
+    </div>
 </body>
 
 </html>
