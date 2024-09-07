@@ -1,3 +1,7 @@
+* {
+    box-sizing: unset;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -43,12 +47,41 @@ body {
     height: 300px;
 }
 
-/* rename w/ class name for CSS art */ .class {
+.brackets {
+    display: grid;
+    place-items: center;
     width: 100%;
     max-width: 400px;
     height: 300px;
-    background: #F3F3F3;
+    background: #DE817E;
 }
+
+#diamond {
+    width: 58px;
+    height: 58px;
+    border: 42px solid #217E81;
+    transform: rotate(45deg);
+    position: relative;
+  }
+
+  #diamond::before,
+  #diamond::after {
+    position: absolute;
+    content: '';
+    background: #DE817E;
+    width: 42px;
+    height: 42px;
+  }
+  
+  #diamond::before{
+    top: -42px;
+    left: -42px;
+  }
+  
+  #diamond::after {
+    top: 58px;
+    left: 58px;
+  }
 
 /* wraps main section */
 .wrapper {
