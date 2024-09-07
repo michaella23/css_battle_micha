@@ -1,3 +1,16 @@
+const header = document.getElementById("header")
+
+
+function loadHeader() {
+    header.innerHTML += `
+        <img src="../../grid.png" alt="grid with squares of different shades of green, as on GitHub" class="grid-img">
+        <h1>30 days of CSS Battle</h1>
+        <img src="../../grid.png" alt="grid with squares of different shades of green, as on GitHub" class="grid-img">
+    `
+}
+
+loadHeader()
+
 const mainContainer = document.getElementById("main-container")
 const solutionsOfTheDay = document.querySelectorAll(".solution-of-the-day")
 
