@@ -19,16 +19,25 @@ body {
 }
 
 .back-link,
-.repo-link {
+.repo-link,
+.prev-link,
+.next-link {
     background-color: #dedede;
     color: #232323;
     padding: 0.5em 1.5em;
     border-radius: 4px;
 }
 
-body,
-main {
-    place-items: center;
+.prev-link {
+    position: absolute;
+    top: 55%;
+    left: 2em;
+}
+
+.next-link {
+    position: absolute;
+    top: 55%;
+    right: 2em;
 }
 
 .star {
@@ -62,7 +71,7 @@ main {
 .wrapper {
     padding: 2em 0;
     border: 1px solid #9382E4;
-    margin-top: 4em;
+    margin-top: 10em;
     background-color: #232323 !important;
     color: #dedede;
     width: 100%;

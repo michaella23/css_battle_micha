@@ -15,6 +15,8 @@ img {
 }
 
 header {
+    position: absolute;
+    top: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,6 +51,7 @@ h1 {
 }
 
 #main-container {
+    margin-top: 15em;
     display: grid;
     gap: 0 2em;
     padding: 1em;
