@@ -40,6 +40,7 @@ main {
 
 #one,
 #two {
+    max-width: 100%;
     border: 50px solid #9382E4;
     position: absolute;
 }
@@ -57,26 +58,30 @@ main {
 }
 
 .wrapper {
+    border: 1px solid rgb(255, 123, 0);
+    margin-top: 4em;
     background-color: #232323 !important;
     color: #dedede;
-    width: 70vw;
+    width: 100%;
 }
 
 .wrapper section {
+    margin: 1em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 4em;
+    gap: 1em;
 }
 
 .screenshot {
-    max-width: 100%;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     height: 300px;
 }
 
 .text {
     margin: 2em auto;
-    width: 50vw;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,4 +102,20 @@ code {
     background-color: #dedede;
     color: #232323;
     width: max-content;
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        width: 70vw;
+    }
+
+    .wrapper section {
+        flex-direction: row;
+        gap: 4em;
+    }
+
+    .text {
+        flex-direction: column !important;
+        width: 50vw;
+    }
 }
