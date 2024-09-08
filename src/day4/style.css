@@ -27,18 +27,6 @@ body {
     border-radius: 4px;
 }
 
-.prev-link {
-    position: absolute;
-    top: 55%;
-    left: 2em;
-}
-
-.next-link {
-    position: absolute;
-    top: 55%;
-    right: 2em;
-}
-
 .jay {
     width: 100%;
     max-width: 400px;
@@ -161,5 +149,17 @@ code {
         margin: 2em auto;
         flex-direction: column !important;
         width: 75%;
+    }
+
+    .prev-link {
+        position: absolute;
+        top: 55%;
+        left: 2em;
+    }
+
+    .next-link {
+        position: absolute;
+        top: 55%;
+        right: 2em;
     }
 }

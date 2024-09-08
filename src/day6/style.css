@@ -29,17 +29,7 @@ body {
     border-radius: 4px;
 }
 
-.prev-link {
-    position: absolute;
-    top: 55%;
-    left: 2em;
-}
 
-.next-link {
-    position: absolute;
-    top: 55%;
-    right: 2em;
-}
 
 /* wraps main section */
 .wrapper {
@@ -147,5 +137,17 @@ code {
         margin: 2em auto;
         flex-direction: column !important;
         width: 75%;
+    }
+
+    .prev-link {
+        position: absolute;
+        top: 55%;
+        left: 2em;
+    }
+    
+    .next-link {
+        position: absolute;
+        top: 55%;
+        right: 2em;
     }
 }
