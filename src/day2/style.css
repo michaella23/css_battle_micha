@@ -1,3 +1,7 @@
+* {
+    box-sizing: unset;
+}
+
 body,
 .star {
     display: grid;
@@ -50,21 +54,20 @@ body {
 
 #one,
 #two {
+    max-width: 100%;
+    border: 50px solid #9382E4;
     position: absolute;
 }
 
 #one {
-    width: 120px;
-    height: 120px;
-    border: 30px solid #9382E4;
-    background: #B6EBE7;
-    z-index: 10;
+    width: 100px;
+    height: 100px;
 }
 
 #two {
-    width: 120px;
-    height: 120px;
-    border: 25px solid #9382E4;
+    width: 140px;
+    height: 140px;
+    border-width: 30px;
     transform: rotate(45deg);
 }
 
