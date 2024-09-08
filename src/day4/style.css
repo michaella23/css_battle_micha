@@ -1,3 +1,7 @@
+* {
+    box-sizing: unset;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -54,7 +58,7 @@ body {
 #one {
     position: absolute;
     top: 93px;
-    left: 148px;
+    left: 152px;
     width: 80px;
     height: 19px;
     background: #998235;
@@ -63,7 +67,7 @@ body {
 
 #two {
     height: 95px;
-    width: 46px;
+    width: 42px;
     background: #998235; 
     position: relative;
     top: 100px;
