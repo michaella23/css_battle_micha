@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="style.css">
     <title>CSS Battle Day 9</title>
@@ -12,16 +16,18 @@
 <body>
     <header id="header"></header>
     <a href="../../index.html" class="back-link">Back to home</a>
+    <a href="../../src/day8/index.html" class="prev-link">prev</a>
+    <a href="../../src/day10/index.html" class="next-link">next</a>
     <div class="wrapper">
         <section class="main">
-            <div class=""><!-- class is name for your CSS art -->
-
+            <div class="heart"><!-- class is name for your CSS art -->
+                <div class="red"></div>
             </div>
-            <!-- <img src="code.png" alt="CSS code" class="screenshot">-->
+            <img src="code.png" alt="CSS code" class="screenshot">
         </section>
 
         <section class="text">
-            <p>Nothing here yet</p>
+            <p>This challenge was another one where I could not manage to get a pixel-perfect solution. I created a column with a rounded top, and used the <code>::after</code> pseudoelement to add another rounded top at an angle to the first. I tinkered with the angle that I had set the element to <code>transform: rotate</code> and tried repositioning in various ways, but perfection was not achievable today.</p>
             <a href="https://github.com/michaella23/css_battle_micha/tree/main/src/day9" target="_blank"
                 class="repo-link">Check out my code</a>
         </section>
@@ -31,4 +37,5 @@
 
 </html>
 </body>
+
 </html>
