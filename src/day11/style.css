@@ -1,3 +1,7 @@
+* {
+    box-sizing: unset;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -29,11 +33,13 @@ body {
     height: 300px;
 }
 
-/* rename w/ class name for CSS art */ .class {
+.poke {
     width: 100%;
     max-width: 400px;
     height: 300px;
-    background: #F3F3F3;
+    background: #F7EC7D;
+    display: grid;
+    place-items: center;
 }
 
 /* wraps main section */
@@ -53,6 +59,32 @@ body {
     justify-content: center;
     gap: 1em;
 }
+
+.poke div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 50px solid #222;
+    position: relative;
+  }
+
+  .poke div::before,
+  .poke div::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #222;
+  }
+  .poke div::before {
+    left: -80px;
+    top: 20px;
+  }
+
+  .poke div::after {
+    right: -80px;
+    top: 20px;
+  }
 
 .screenshot {
     max-width: 450px;
