@@ -20,7 +20,9 @@ body {
 }
 
 .back-link,
-.repo-link {
+.repo-link,
+.prev-link,
+.next-link {
     background-color: #dedede;
     color: #232323;
     padding: 0.5em 1.5em;
@@ -46,7 +48,7 @@ body {
 .wrapper {
     padding: 2em 0;
     border: 1px solid #dedede;
-    margin-top: 3em;
+    margin-top: 25vh;
     background-color: #232323 !important;
     color: #dedede;
     width: 100%;
@@ -76,6 +78,7 @@ body {
     height: 50px;
     background: #222;
   }
+
   .poke div::before {
     left: -80px;
     top: 20px;
@@ -120,6 +123,7 @@ code {
 @media (min-width: 600px) {
     .wrapper {
         width: 70vw;
+        border: 1px solid #F7EC7D;
     }
 
     .wrapper section {
@@ -131,5 +135,17 @@ code {
         margin: 2em auto;
         flex-direction: column !important;
         width: 75%;
+    }
+        
+    .prev-link {
+        position: absolute;
+        top: 55%;
+        left: 2em;
+    }
+
+    .next-link {
+        position: absolute;
+        top: 55%;
+        right: 2em;
     }
 }
