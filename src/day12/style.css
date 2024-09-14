@@ -41,7 +41,6 @@ body {
 /* wraps main section */
 .wrapper {
     padding: 2em 0;
-    border: 1px solid #dedede;
     margin-top: 25vh;
     background-color: #232323 !important;
     color: #dedede;
