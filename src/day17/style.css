@@ -35,41 +35,39 @@ body {
     width: 100%;
     max-width: 400px;
     height: 300px;
-    background: #F3F3F3;
+    background: #EA9A52;
+    position:relative
 }
 
-  .abstract div {
-    position: relative;
-  }
-  #top {
+.abstract div {
     height: 100px;
-    background: #EA9A52;
-  }
-  #top::after,
-  #bot::before,
-  #bot::after {
-    content: '';
     position: absolute;
-    width: 150px;
-    height: 100px;
-    background: #EA9A52;
-    bottom: 0;
-  }
-  #bot {
-    background: #515697;
-    height: 200px;
-  }
-  #top::after {
-    height: 100%;
-    width: 100px;
-    border-radius: 50%;
-    background: #FCEBEB;
-    left: 150px;
-  }
-  #bot::after {
-    right: 0;
-  }
+}
 
+#top,
+#bot {
+    width: 100px;
+    left: 150px;
+}
+
+#top {
+    background: #FCEBEB;
+    border-radius: 50%;
+}
+
+#bot {
+    bottom: 0;
+}
+
+#mid {
+    top: 100px;
+    width: 100%;
+}
+
+#bot,
+#mid {
+    background:#515697;
+}
 
 /* wraps main section */
 .wrapper {

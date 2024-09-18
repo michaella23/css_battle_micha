@@ -47,6 +47,7 @@ body {
     border: 78px solid transparent;
     border-bottom: 137px solid #2F5A76;
   }
+  
   #two {
     transform: rotate(180deg);
     top: -92.5px;
