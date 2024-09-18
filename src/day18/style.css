@@ -16,7 +16,9 @@ body {
 }
 
 .back-link,
-.repo-link {
+.repo-link,
+.prev-link,
+.next-link {
     background-color: #dedede;
     color: #232323;
     padding: 0.5em 1.5em;
@@ -29,18 +31,31 @@ body {
     height: 300px;
 }
 
-/* rename w/ class name for CSS art */ .class {
+.pointy {
     width: 100%;
     max-width: 400px;
     height: 300px;
-    background: #F3F3F3;
+    background: #49C85B;
 }
+
+.pointy div {
+    position: relative;
+    top: -39px;
+    left: 122px;
+    width: 0;
+    height: 0;
+    border: 78px solid transparent;
+    border-bottom: 137px solid #2F5A76;
+  }
+  #two {
+    transform: rotate(180deg);
+    top: -92.5px;
+  }
 
 /* wraps main section */
 .wrapper {
     padding: 2em 0;
-    border: 1px solid #dedede;
-    margin-top: 3em;
+    margin-top: 25vh;
     background-color: #232323 !important;
     color: #dedede;
     width: 100%;
@@ -88,6 +103,7 @@ code {
 @media (min-width: 600px) {
     .wrapper {
         width: 70vw;
+        border: 1px solid #49C85B;
     }
 
     .wrapper section {
@@ -99,5 +115,17 @@ code {
         margin: 2em auto;
         flex-direction: column !important;
         width: 75%;
+    }
+
+    .prev-link {
+        position: absolute;
+        top: 55%;
+        left: 2em;
+    }
+
+    .next-link {
+        position: absolute;
+        top: 55%;
+        right: 2em;
     }
 }
