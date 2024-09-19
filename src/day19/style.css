@@ -1,3 +1,7 @@
+* {
+    box-sizing: unset;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -16,7 +20,9 @@ body {
 }
 
 .back-link,
-.repo-link {
+.repo-link,
+.prev-link,
+.next-link {
     background-color: #dedede;
     color: #232323;
     padding: 0.5em 1.5em;
@@ -29,34 +35,39 @@ body {
     height: 300px;
 }
 
-/* rename w/ class name for CSS art */ .class {
+.noods {
     width: 100%;
     max-width: 400px;
     height: 300px;
-    background: #F3F3F3;
+    background: #FADE8B;
 }
-/* 
-body{margin:0; background:#FADE8B;place-content:center;margin-left:80}
-#u {position:relative}
-#u , #u::after {
-  width: 60px;
-  height: 60px;
-  border: 60px solid #222;
-  border-right:0;
-  border-bottom:0;
-  border-radius: 120px 0 0 0
+
+#u {
+    position: relative;
+    top: 100px;
+    left: 80px;
 }
+
+#u,
 #u::after {
-  content: '';
-  position:absolute;
-  transform: translate(60px,-60px) rotate(180deg)
-} */
+    width: 60px;
+    height: 60px;
+    border: 60px solid #222;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 120px 0 0 0;
+}
+
+#u::after {
+    content: '';
+    position: absolute;
+    transform: translate(60px, -60px) rotate(180deg);
+}
 
 /* wraps main section */
 .wrapper {
     padding: 2em 0;
-    border: 1px solid #dedede;
-    margin-top: 3em;
+    margin-top: 25vh;
     background-color: #232323 !important;
     color: #dedede;
     width: 100%;
@@ -104,6 +115,7 @@ code {
 @media (min-width: 600px) {
     .wrapper {
         width: 70vw;
+        border: 1px solid#FADE8B;
     }
 
     .wrapper section {
@@ -115,5 +127,17 @@ code {
         margin: 2em auto;
         flex-direction: column !important;
         width: 75%;
+    }
+
+    .prev-link {
+        position: absolute;
+        top: 55%;
+        left: 2em;
+    }
+
+    .next-link {
+        position: absolute;
+        top: 55%;
+        right: 2em;
     }
 }
