@@ -36,22 +36,34 @@ body {
     max-width: 400px;
     height: 300px;
     background: #49C85B;
+    display:grid;
+    place-content:center;
 }
 
 .pointy div {
-    position: relative;
-    top: -39px;
-    left: 122px;
-    width: 0;
-    height: 0;
-    border: 78px solid transparent;
-    border-bottom: 137px solid #2F5A76;
+    height: 220px;
+    width: 155px;
+    background: #2F5A76;
+    clip-path: polygon(50% 0, 81% 83px, 156px 83px, 141px 50%, 156px 136.5px, 81% 136.5px, 50% 100%, 19% 136.5px, -1px 136.5px, 14px 50%, -1px 83px, 19% 83px)
+}
+
+/* body{margin:0;background:#49C85B;position:relative;}
+  div {
+    margin-top: 40;
+    width: 158;
+    height: 273;
+    background: #2F5A76;
+    position:absolute;
+    left: 121;
   }
-  
+  #one {
+    clip-path: polygon(50% 0, 100% 50%, 0 50%);
+  }
   #two {
+    margin-top: -14;
     transform: rotate(180deg);
-    top: -92.5px;
-  }
+    clip-path: polygon(50% 0, 100% 50%, 0 50%);
+  } */
 
 /* wraps main section */
 .wrapper {
