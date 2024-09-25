@@ -40,12 +40,12 @@ body {
     place-items:center
 }
 
-    #one {
+#one {
     width: 125px;
     height: 150px;
     border-radius: 90px 90px 70px 121px;
     background: 
-  radial-gradient(
+    radial-gradient(
         ellipse at 100% 100%,
         #FADE8B,
         #FADE8B 35px,
@@ -70,9 +70,8 @@ body {
         #FADE8B 140px,
         #FADE8B
         );
-    rotate: 2deg
+    rotate: 2deg;
     } 
-</style> */
 
 /* wraps main section */
 .wrapper {
