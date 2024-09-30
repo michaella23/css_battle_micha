@@ -1,3 +1,7 @@
+* {
+    box-sizing: unset;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -39,10 +43,10 @@ body {
 }
 
 .triangle div {
-    margin: 90px 132px;
+    margin: 90px 140px;
     border: 60px solid #EAC049;
     border-left: 60px solid #0000;
-    border-top:60px solid #0000;
+    border-top: 60px solid #0000;
     outline: 40px solid #EAC049
   }
 
